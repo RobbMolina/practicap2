@@ -1,0 +1,176 @@
+/*ESTILOS PARA LANDING PAGE*/
+* {
+  font-family: "roboto", sans-serif;
+  margin: auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ececec;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+}
+
+.btn a{
+  color: #ffffff;
+  text-decoration: none;
+}
+.contenedor {
+  height: auto;
+  width: auto;
+  display: flex;
+  font-weight: 400;
+  padding-top: 80px;
+  margin-bottom: 5%;
+}
+
+.tittle{
+  margin-left: 5%;
+  margin-top: 100px;
+  font-size: 80px;
+  color: rgb(0, 0, 0);
+  width: 40%;
+  float: right;
+  display: flex;
+  align-items: center;
+  word-break:break-all;
+  margin: 0 0 1em 1em;
+  padding-right: 5%;
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 40px;
+  width: 100%;
+  background: rgb(0,94,255);
+  background: linear-gradient(90deg, rgba(0,94,255,1) 0%, rgba(9,9,85,1) 64%, rgba(2,0,36,1) 100%);
+}
+
+.space{
+  padding-left: 60%;
+}
+.btn{
+  padding: 2%;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.slider-box{
+  width: 400px;
+  height: 300px;
+  margin: 50px auto 0 50px;
+  overflow: hidden;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+
+}
+.slider-box ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 10s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+  width: 100%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-box img{
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  25% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+  50% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  75% {margin-left: -200%;}
+
+  75% {margin-left: -300%;}
+  100% {margin-left: -300%;}
+}
+
+@media(max-width:991px){
+  .slider-box{
+    width: 100%;
+  }
+}
+
+/*ESTILOS PARA EL BOTON DE COMENZAR, INCLYE ANIMACION*/
+.boton {
+  position: relative;
+  padding: 10px;
+  border: none;
+  background-color: rgb(0, 53, 186);
+  color: #ffffff;
+  font-size: 35px;
+  border-radius: 10px;
+  text-align: center;
+  vertical-align: auto;
+  width: 200px;
+  cursor: pointer;
+}
+
+.boton i {
+  margin: 0 10px;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+  transition: transform 0.7s;
+}
+
+.contenedor2 {
+  height: 100%;
+  width: 100%;
+  background-color: #ececec;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 5px #000000;
+}
+
+
+
+/*PARTE DE LOS ARTICULOS INFORMATIVOS DEBAJO DEL LANIDNG PAGE*/
+
+.barra_diferenciadora {
+  height: 50px;
+  background: rgb(0,94,255);
+  background: linear-gradient(90deg, rgba(0,94,255,1) 0%, rgba(9,9,85,1) 64%, rgba(2,0,36,1) 100%);
+  border: none;
+  color: white;
+  font-size: 35px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0 5% 0 5%;
+}
+
+.articulo {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.39);
+  text-align: justify;
+  margin: 30px 10px;
+  font-size: 20px;
+  align-items: center;
+  width: auto;
+  height: 100%;
+}

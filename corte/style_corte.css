@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "roboto", sans-serif;
+}
+
+ul {
+  padding: 10px;
+  overflow: hidden;
+  font-family: "roboto", sans-serif;
+}
+
+/*CLASES MENU LATERAL INDISPENSABLE EN CADA PAG*/
+.container {
+  margin-left: 0;
+  transition: all 0.3s ease;
+}
+
+.container.move {
+  margin-left: 250px;
+}
+
+.navbar {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 40px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-left: 30px;
+  color: white;
+  font-weight: 500;
+}
+
+.main {
+  height: 1000px;
+}
+
+.logo {
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  opacity: 0;
+  background: rgb(19, 26, 134);
+  height: 100vh;
+  width: 250px;
+  z-index: 2;
+  box-shadow: 30px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+li:hover {
+  background: rgb(13, 19, 102);
+  transition: all 400ms ease;
+}
+
+.cerrarsesion {
+  margin-top: 95%;
+}
+.sidebar ul li {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  align-items: center;
+  vertical-align: center;
+  padding-top: 23px;
+  height: 45px;
+}
+
+.sidebar.show {
+  left: 0px;
+  opacity: 1;
+}
+
+/*Sombreado en el contenido mientras se muestra la barra*/
+
+.backdrop {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0;
+}
+
+.backdrop.show {
+  display: block;
+  opacity: 1;
+}
+
+.boton-añadir {
+  width: 300px;
+  background-color: rgb(31, 46, 132);
+  border: 2px solid rgb(31, 46, 132);
+  border-radius: 25px;
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.boton-eliminar {
+  width: 300px;
+  background-color: rgb(31, 46, 132);
+  border: 2px solid rgb(31, 46, 132);
+  border-radius: 25px;
+  color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+/*CLASES DENTRO DEL MAIN*/
+
+input {
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 400px;
+  padding: 10px;
+
+  border: none;
+  box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.39);
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.modal {
+  padding: 20px;
+  border: none;
+}
+
+.btn-cerrar {
+  cursor: pointer;
+  text-align: right;
+}
+
+/* TABLA*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th {
+  padding: 10px;
+  background-color: rgb(93, 34, 255);
+  color: white;
+}
+td {
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  background-color: aliceblue;
+}
+
+/*BARRA DE BUSQUEDA Y BOTON DE AÑADIR PRODUCTO*/
+
+.opciones {
+  display: flex;
+}
+
+.btn-abrirmodal {
+  background-color: rgb(59, 59, 219);
+  color: white;
+  padding: 0.6rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.searchbar {
+  flex-grow: 1;
+  margin: 1rem;
+}
+
+tbody tr.hide {
+  display: none;
+}
+
+.img-con {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: auto;
+  width: auto;
+}
+
+.bienvenido {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin: 20px;
+  color: #000000;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+
+.title{
+  background-color: rgb(46, 49, 146);
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.element{
+  background-color: rgb(246, 246, 246);
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.boton-turno {
+  width: 300px;
+  background-color: rgb(31, 46, 132);
+  border: 2px solid rgb(31, 46, 132);
+  border-radius: .5rem;
+  color: #ffffff;
+  margin: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  box-sizing: content-box;
+}
